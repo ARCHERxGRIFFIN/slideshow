@@ -1,0 +1,37 @@
+body {
+    margin: 0%;
+    padding: 0%;
+}
+.image {
+    width: 40%;
+    height: 20%;
+    margin-left: 20%;
+    margin-top: 10%;
+    
+}
+
+
+.background {
+    background-color: black;
+    height: 100vh;
+    width: 100%;
+    background: black;
+display: flex;
+align-items: center;
+justify-content: center;
+    }
+
+.preloader {
+ border: 20px solid #db0000;
+ border-top: 20px solid blue;
+ border-radius: 50%;
+ width: 144px;
+ height: 144px; 
+ animation: spin 2s ease infinite;
+}
+
+@keyframes spin {
+from{ transform: rotate(odeg);}
+to { transform: rotate(360deg);}
+
+}

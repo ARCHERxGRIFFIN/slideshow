@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+     <title>preloaader</title>
+     <link rel="stylesheet" href="preloader.css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+<div class="background">
+ <div class="preloader"></div>
+</div>
+
+
+
+
+<div class="slider">
+<ul class="slides">
+     <li>
+          <img src="https://static.zerochan.net/Emiya.Shirou.full.1879111.jpg" alt="">
+     </li>
+     <li>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4m7W3R6YY6hWGWIi64eqJQtIRh-Su6z2MEQ&usqp=CAU" alt="">
+     </li>
+     <li>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiKRqVcdBSNUgvIt9Uf3JLFRQp30g_ZXyQ3w&usqp=CAU" alt="">
+          </li>
+</ul>
+</div>
+
+<script>
+     $(window).on("load",function(){
+          $(".background").fadeOut(2000)
+     })
+
+     var slideshow = document.querySelector(".slider")
+     M.Slider.init(slideshow, {
+          indicators: false,
+          interval: 3000,
+          height:900
+     })
+
+</script>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
